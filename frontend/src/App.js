@@ -1,6 +1,8 @@
 import "./App.css";
 import axios from "axios";
 import { useState } from "react";
+const API_URL =
+  process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 function App() {
   const [url, setUrl] = useState("");
@@ -13,7 +15,7 @@ const handleAudit = async () => {
 setError("");
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/audit",
+      `${API_URL}/api/audit`,
       {
         url: url
       }
