@@ -198,6 +198,3 @@ AI tools were used during development to clarify concepts, review code, improve 
 
 ---
 
-## Credits
-
-Built for **Digital Heroes Training Task**.
